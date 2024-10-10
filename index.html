@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM SBA</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <form action="result.html" method="GET">
+        <h1> AetherAcademy Learning Made Easy</h1>
+        
+            <div id="carouselExample" class="carousel slide">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="https://images.pexels.com/photos/9490633/pexels-photo-9490633.jpeg?auto=compress&cs=tinysrgb&w=800" class="d-block w-10 h-30"  alt="">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="https://images.pexels.com/photos/5905876/pexels-photo-5905876.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="d-block w-10 h-30" alt="">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="https://images.pexels.com/photos/12911737/pexels-photo-12911737.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="d-block w-10 h-30" alt="">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+              <p>“Our mission at AetherAcademy, our mission is to empower learners by providing a dynamic platform that fosters curiosity, 
+                collaboration, and critical thinking. We strive to create an engaging and inclusive 
+                environment where knowledge is accessible to all, inspiring individuals to unlock 
+                their full potential and embrace lifelong learnin".</p>
+    
+        <h2>Have an account? </h2>
+        <h6>Login to have access to our library and all the study tools you need</h6>
+        
+        <div class="Login">
+            <h2>Login </h2>
+            <input type="text" id="loginInput" placeholder="Your email" required>
+            <input type="text" id="loginPin" placeholder="Your PIN (letters and numbers)" required>
+            <input type="button" value="Login" onclick="log('loginInput', 'loginPin')"/>
+            <div id="login-error-message"></div>
+        </div>
+        <h2>New Here? </h2>
+        <h6>Sign-up to have access to our library and all the study tools you need</h6>
+        <div class="signup">
+            <h2>Sign Up</h2>
+            <input type="text" id="nameInput" placeholder="Username" required>
+            <input type="email" id="emailInput" placeholder="Email" required>
+            <input type="password" id="passwordInput" placeholder="Password" required>
+            <input type="password" id="confirmPasswordInput" placeholder="Confirm Password" required>
+            <input type="text" id="countryInput" placeholder="Country" required>
+            <label>
+             <input type="checkbox" id="termsCheckbox"> I accept the terms and conditions
+            </label>
+            <button id="signupBtn">Sign Up</button>
+        </div> 
+        <div id="signupMessage" style="display: none;"></div>
+        
+        
+         <p id="confirmationMessage" class="hidden"></p>
+           <p id="emailMessage" class="hidden"></p>
+    
+           <ul id="signupList"></ul>
+       
+           
+
+
+ 
+    <script src="index.js"></script>
+</form>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>        
+</body>
+
+</html>
